@@ -1,4 +1,4 @@
-package bhz.base.conn011;
+package com.bjsxt.base.conn011;
 
 public class Singletion {
 	

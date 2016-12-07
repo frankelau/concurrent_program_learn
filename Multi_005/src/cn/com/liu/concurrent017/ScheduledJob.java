@@ -20,6 +20,20 @@ public class ScheduledJob {
         ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
         
         ScheduledFuture<?> scheduleTask = scheduler.scheduleWithFixedDelay(command, 5, 1, TimeUnit.SECONDS);
-    
+        int count = 0;
+		while(true){
+			System.out.println(count);
+			try {
+				TimeUnit.SECONDS.sleep(1);
+				count++;
+				if(count==20){
+					break;
+				}
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		System.out.println("scheduleTask.get:"+scheduleTask.cancel(false));
+		scheduler.shutdown();
     }
 }
