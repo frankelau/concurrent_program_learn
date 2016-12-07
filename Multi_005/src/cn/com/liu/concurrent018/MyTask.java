@@ -1,4 +1,4 @@
-package com.bjsxt.height.concurrent018;
+package cn.com.liu.concurrent018;
 
 public class MyTask implements Runnable {
 

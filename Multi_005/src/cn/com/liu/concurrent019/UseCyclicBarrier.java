@@ -1,4 +1,4 @@
-package com.bjsxt.height.concurrent019;
+package cn.com.liu.concurrent019;
 import java.io.IOException;  
 import java.util.Random;  
 import java.util.concurrent.BrokenBarrierException;  
